@@ -1,5 +1,9 @@
 .contact{
-
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 50px 0;
 }
 
 .contact-col {
@@ -33,5 +37,23 @@
   .contact-col ul li img{
     width: 25px;
     margin-right: 10px;
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    display: block;
+    width: 100%;
+    background: #EBECFE;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    resize: none;
+  }
+
+  .contact-col span{
+    margin: 20px 0;
+    display: block;
   }
   

@@ -27,3 +27,51 @@ nav ul li {
     background: #212EA0;
     transition: 0.5s;
 }
+
+.menu-icon{
+    display: none;
+}
+
+/*responsive */
+
+@media (max-width : 1000px){     
+    .logo{
+        width: 140px;
+    }
+    nav ul li{
+        margin:10px 15px;
+    }
+}
+
+@media (max-width : 840px){ 
+     nav{
+        padding: 15px 0;
+     }
+
+     nav ul {
+        position: fixed;
+        top: 0;
+        right: 0;  /* Menu will appear from the right side */
+        bottom: 0;  /*using avaialable height*/
+        background: #212EA0;
+        z-index: -1;  /* Ensure the navbar is above the content */
+        width: 200px;
+        padding-top: 70px;
+        transition: 0.5s ;  /* Smooth sliding transition */
+        /* transform: translateX(100%);  Initially hide off-screen to the right */
+      }
+    
+      nav ul li {
+        display: block;
+        margin: 25px 40px;
+      }
+
+      .menu-icon{
+        display: block;
+        width: 30px;
+        cursor: pointer;
+      }
+      .hide-mobile-menu{
+        right:-200px;
+      }
+}
